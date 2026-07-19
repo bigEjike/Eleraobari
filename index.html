@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <p><span>Ejike portfolio</span></p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="about.html">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="header">
+        <div class="header_container">
+           <p id="header" class="header_logo">Ejike portfolio</p>
+           <nav class="nav">
+              <a href="#home" class="nav_link">Home</a>
+              <a href="#about" class="nav_link">About</a>
+              <a href="#skills" class="nav_link">Skills</a>
+              <a href="#project" class="nav_link">Project</a>
+              <a href="#contact" class="nav_link">Contact</a>
+           </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Ejike Eleraobari</h1>
-            <p>upcoming front end developer</p>
+    <main class="main">
+        <!-- hero section -->
+        <section id="home" class="hero">
+            <h1 class="hero_title">Ejike Eleraobari</h1>
+            <p class="hero_subtitle">upcoming frontend developer</p>
+            <div class="hero_action">
+                <a href="#contact" class="button button--primary">Hire me</a>
+                <a href="#project" class="button button--secondary">See my work</a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About me</h2>
-            <p>i'm a web developer</p>
-            <p>i'm a nigerian</p>
-            <p>I want to make my own websites</p>
+        <!-- about section -->
+        <section id="about" class="section">
+            <h2 class="section_title">About me</h2>
+            <div class="about_content">
+                <p class="about_text">My name is Ejike. i grew up in Rivers state, Nigeria, and i've always been curious about how techonology works. I decided to learm web development because I want to build products that solve real problems for real people</p>
+                <p class="about_text">when I'm not coding, i do play football. I'm currently in a structured mentorship program learning HTML, CSS and JavaScript</p>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>my skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Problem solving</li>
-                <li>Python</li>
+        <!-- skills -->
+        <section id="skills" class="section">
+            <h2 class="section_title">my skills</h2>
+            <ul class="skills_list">
+                <li class="skill_item">HTML</li>
+                <li class="skill_item">CSS</li>
+                <li class="skill_item">JavaScript</li>
+                <li class="skill_item">Problem solving</li>
+                <li class="skill_item">Python</li>
             </ul>
-            <table>
+            <table class="skill_table">
                 <thead>
                     <tr>
                         <th>skills</th>
@@ -77,67 +88,90 @@
             </table>
         </section>
 
-        <section id="project">
-            <h2>My projects</h2>
-            <article>
-                <h3>My portfilio</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quae molestiae nihil, illo dolorum, magnam, consectetur eligendi reprehenderit odit cum ratione tempore officiis ut vitae doloribus quo! Nisi, qui minima.</p>
-            </article>
+        <!-- project section -->
+        <section id="project" class="section">
 
-            <article>
-                <h3>An e-Commerece website</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam doloremque quae, iste consequuntur velit quisquam molestiae accusantium blanditiis expedita natus nemo architecto suscipit voluptatum aut veritatis voluptates ea, id laborum?</p>
-            </article>
+            <h2 class="section_title">My projects</h2>
+            <div class="project_grid">
+                <article class="project-card">
+                    <h3 class="project-title">portfolio website</h3>
+                    <p class="project-card_description">my personal portfolio built with semantic HTML, Bem CSS and deployed on netlify</p>
+                    <div class="project-card_actions">
+                        <a href="#" class="project-card_link">live demo</a>
+                        <a href="#" class="project-card_link project-card_link--github">Github</a>
+                    </div>
+                </article>
 
-            <article>
-                <h3>A betting website</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis vitae ad maiores, in tempora cumque magnam totam incidunt, inventore deserunt earum at, quod possimus dolores. Quo eaque voluptates sit!</p>
-            </article>
+                <article class="project-card">
+                    <h3 class="project-title">Todo app</h3>
+                    <p class="project-card_description">A simple task manager for organising daily work.</p>
+                    <div class="project-card_actions">
+                        <a href="#" class="project-card_link">Live demo</a>
+                        <a href="#" class="project-card_link project-card_link--github">Github</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-title">weather dashboard</h3>
+                    <p class="project-card_description">A weather dashboard showing current conditions for any city</p>
+                    <div class="project-card_actions">
+                        <a href="#" class="project-card_link">Live demo</a>
+                        <a href="#" class="project-card_link project-card_link--github">Github</a>
+                    </div>
+                </article>
+
+
+            </div>
+            
         </section>
 
-        <section id="contact">
-            <h2>Get in touch</h2>
-            <form id="contact-form">
-                <div class="form group">
-                    <label for="name">Full name</label>
-                    <input type="text" id="name" name="Name" placeholder="e.g Ejike Eleraobari"> <br>
+        <!-- contact section -->
+        <section id="contact" class="section">
+            <h2 class="contact-title">Get in touch</h2>
+            <div class="contact_wrapper">
+                <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-group_label">Full name</label>
+                    <input class="form-group_input" type="text" id="name" name="Name" placeholder="e.g Ejike Eleraobari"> <br>
 
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email" placeholder="e.g ejikeeleraobari@gmail.com"> <br>
+                    <label for="email" class="form-group_label">email</label>
+                    <input class="form-group_input" type="email" id="email" name="email" placeholder="e.g ejikeeleraobari@gmail.com"> <br>
 
-                    <label for="referal code">Referal code</label>
-                    <input type="text" id="text" name="text" placeholder="e.g wxx43ti"><br>
+                    <label for="referal code" class="form-group_label">Referal code</label>
+                    <input class="form-group_input" type="text" id="text" name="text" placeholder="e.g wxx43ti"><br>
 
-                    <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="09000000000" pattern="[0-9]{11}"> <br>
+                    <label for="phone" class="form-group_label">Phone number</label>
+                    <input class="form-group_input" type="tel" id="phone" name="phone" placeholder="09000000000" pattern="[0-9]{11}"> <br>
 
-                    <select name="subject" id="subject">
+                    <select class="form-group_input" name="subject" id="subject">
                         <option value="">--chose a subject--</option>
                         <option value="general">general inquiry</option>
                         <option value="project">project work</option>
                         <option value="job">job opportunities</option>
                     </select><br>
 
-                    <label><input type="radio" name="contact-method" value="email">email</label>
+                    <label class="form-group_label"><input class="form-group_input" type="radio" name="contact-method" value="email">email</label>
                     <label><input type="radio" name="contact-method" value="phone">phone number</label>
-                    <label><input type="radio" name="contact-method" value="whatsapp">whatsapp</label>
-                    <label><input type="radio" name="contact-method" value="telegram">telegram</label><br>
+                    <label class="form-group_label"><input class="form-group_input" type="radio" name="contact-method" value="whatsapp">whatsapp</label>
+                    <label class="form-group_label"><input class="form-group_input" type="radio" name="contact-method" value="telegram">telegram</label><br>
 
-                    <textarea name="message" id="message" rows="6" placeholder="tell me about your project"></textarea><br>
+                    <textarea class="form-group_input" name="message" id="message" rows="6" placeholder="tell me about your project"></textarea><br>
 
-                    <label><input type="checkbox" name="terms" value="agreed required">I agree to be contacted about my enquires</label><br>
+                    <label class="form-group_label"><input class="form-group_input" type="checkbox" name="terms" value="agreed required">I agree to be contacted about my enquires</label><br>
 
-                    <button type="submit">send message</button>
+                    <button class="button button--primary" type="submit">send message</button>
 
                     
 
                 </div>
             </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Ejike Eleraobari. All rights reserved</p>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="footer_copyright">&copy; 2025 Ejike Eleraobari. All rights reserved</p>
     </footer>
     
     
