@@ -35,8 +35,8 @@
         <section id="about" class="section">
             <h2 class="section_title">About me</h2>
             <div class="about_content">
-                <p class="about_text">My name is Ejike. i grew up in Rivers state, Nigeria, and i've always been curious about how techonology works. I decided to learm web development because I want to build products that solve real problems for real people</p>
-                <p class="about_text">when I'm not coding, i do play football. I'm currently in a structured mentorship program learning HTML, CSS and JavaScript</p>
+                <p class="about_text">My name is Ejike. i grew up in Rivers state, Nigeria, and i've always been curious about how techonology works. I decided to learn web development because I want to build products that solve real problems for people</p>
+                <p class="about_text">when I'm not coding, I do play football. I'm currently in a structured mentorship program learning HTML, CSS and JavaScript</p>
             </div>
         </section>
 
@@ -150,14 +150,16 @@
                         <option value="job">job opportunities</option>
                     </select><br>
 
-                    <label class="form-group_label"><input class="form-group_input" type="radio" name="contact-method" value="email">email</label>
-                    <label><input type="radio" name="contact-method" value="phone">phone number</label>
-                    <label class="form-group_label"><input class="form-group_input" type="radio" name="contact-method" value="whatsapp">whatsapp</label>
-                    <label class="form-group_label"><input class="form-group_input" type="radio" name="contact-method" value="telegram">telegram</label><br>
+                    
+                    <label class="form-group_radio"><input type="radio" name="contact-method" value="email">email</label>
+                    <label class="form-group_radio"><input type="radio" name="contact-method" value="phone">phone number</label>
+                    <label class="form-group_radio"><input type="radio" name="contact-method" value="whatsapp">whatsapp</label>
+                    <label class="form-group_radio"><input type="radio" name="contact-method" value="telegram">telegram</label><br>
+                    
 
                     <textarea class="form-group_input" name="message" id="message" rows="6" placeholder="tell me about your project"></textarea><br>
 
-                    <label class="form-group_label"><input class="form-group_input" type="checkbox" name="terms" value="agreed required">I agree to be contacted about my enquires</label><br>
+                    <label><input type="checkbox" name="terms" value="agreed required">I agree to be contacted about my enquires</label><br>
 
                     <button class="button button--primary" type="submit">send message</button>
 
@@ -167,6 +169,54 @@
             </form>
             </div>
         </section>
+
+        <!-- testimonial section -->
+
+        <section id="testimonial" class="testimonial_section">
+            <h2 class="section_title">What people say</h2>
+            <div class="testimonial_grid">
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card_stars">★★★★★</div>
+                    <p class="testimonial-card_quote">"Ejike is one of the most dedicated students I have taught. he asks the rights questions and never gives up when something is hard."</p>
+                    <div class="testimonial-card_author">
+                        <img class="testimonial-card_image" src="This one brought us all to the table.jpg" alt="photo">
+                        <div>
+                           <p class="testimonial-card_name">EJIKE GODAM</p>
+                           <p class="testimonial-card_role">FULL-STACK DEVELOPER</p>
+                        </div>
+                    </div>
+                
+                </div> 
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-card_stars">★★★★★</div>
+                    <p class="testimonial-card_quote">"Working with Ejike on our project was seamless. His attention to detail in the HTML was structure made styling extremely straightforward"</p>
+                    <div class="testimonial-card_author">
+                        <img class="testimonial-card_image" src="This one brought us all to the table.jpg" alt="photo">
+                        <div>
+                           <p class="testimonial-card_name">AMAKA OBI</p>
+                           <p class="testimonial-card_role">PRODUCT DESIGNER</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card_stars">★★★★★</div>
+                    <p class="testimonial-card_quote">"I hired Ejike for a small landing page. He delivered clean code, on time, and explained every decision he made. Wouled hire again."</p>
+                    <div class="testimonial-card_author">
+                        <img class="testimonial-card_image" src="This one brought us all to the table.jpg" alt="photo">
+                        <div>
+                           <p class="testimonial-card_name">EMEKA NWOSU</p>
+                           <P class="testimonial-card_role">SMALL BUSINESS OWNER</P>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
 
     <!-- footer -->

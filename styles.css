@@ -220,12 +220,14 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    background-color: #eeeeee;
 }
 
 .project-card {
     background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 8px;
+    margin: 16px 0;
     padding: 24px;
     transition: box-shadow 0.2s;
 }
@@ -295,6 +297,61 @@ a:hover {
     border-color: #1a5c38;
     box-shadow: 0 0 0 3px rgba(26, 92, 56, 0.1);
 }
+
+/* TESTIMONIAL SECTION */
+
+.testimonial_section {
+    background-color: #eeeeee;
+}
+.testimonial_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    color: #555555;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 24px;
+    transition: box-shadow 0.2s;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) ;
+}
+
+.testimonial-card_author {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-card_quote {
+    font-style: italic;
+}
+
+.testimonial-card_name {
+    color: #111111;
+    font-weight: 600;
+}
+
+.testimonial-card_role {
+    font-size: small;
+}
+
+.testimonial-card_image {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 
 /* footer */
 
